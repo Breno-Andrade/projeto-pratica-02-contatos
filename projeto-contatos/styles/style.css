@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #00FFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    display: block;
+    width: fit-content;
+}
+
+.main-title h1 {
+    color: #385555;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.div-wrapper {
+    background-color: #FFFFFF;
+    overflow-y: auto;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contacts-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.picture-item img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.content {
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.contact-name {
+    font-size: 24px;
+    color: #385555;
+    margin: 0;
+}
+
+.contact-mail{
+    color: #aaaaaa;
+    margin: 5px 0;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0;
+}
+
+.list-item:hover .actions{
+    opacity: 0.3;
+}
+
+.list-item:hover {
+    background-color: #e8e8e8;;
+}
